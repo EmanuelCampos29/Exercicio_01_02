@@ -7,15 +7,16 @@ public class Calculadora {
 			break;
 		}
 		case '-': {
-			if (a < 0 || b < 0) { 
-				float absA = Math.abs(a);
-				float absB = Math.abs(b);
-				resultado = absB + absA; 
+			if (a < b) {
+				resultado = b - a;
+			}
+			else {
+				resultado = a - b;
+			}
 				break;
 			}
-			resultado = a - b;
-			break;
-		}
+			
+			
 		case '/': {
 			resultado = a / b;
 			break;
